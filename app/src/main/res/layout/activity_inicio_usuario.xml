@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InicioUsuario">
+
+    <EditText
+        android:id="@+id/editUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USUARIO"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CONTRASEÑA"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editUsuario"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editContraseña"/>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_marginTop="20sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".FichaUsuarios">
+
+
+    <EditText
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="Nombres de la Ave"
+        android:id="@+id/editAves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editComentarios"
+        android:layout_width="371dp"
+        android:layout_height="159dp"
+        android:layout_below="@id/editAves"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="20sp"
+        android:hint="Agregue su Comentarios" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editComentarios"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20sp"
+        android:text="Guardar"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:textSize="18sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:text="Ver Datos Guardados"
+        android:id="@+id/btnVer"
+        android:layout_below="@id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/editId"
+        android:inputType="number"
+        android:hint="Eliminar ID del Ave (TODO) "
+        android:layout_below="@id/btnVer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editId"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20sp"
+        android:text="Eliminar"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    <EditText
+        android:inputType="number"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/editActualizarId"
+        android:hint="Actualizar ID"
+        android:layout_below="@id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/editActualizarComentarios"
+        android:hint="Actualizar Comentarios (Borra lo anterior)"
+        android:layout_below="@id/editActualizarAves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/editActualizarAves"
+        android:layout_below="@id/editActualizarId"
+        android:hint="Actualizar Nombre del Ave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textSize="18sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/btnActualizar"
+        android:text="Actualizar"
+        android:layout_below="@id/editActualizarComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
+
+

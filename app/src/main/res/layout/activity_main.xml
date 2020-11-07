@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNuevoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USUARIO"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editNuevapassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CONTRASEÑA"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/editNuevoUsuario"/>
+
+    <EditText
+        android:id="@+id/editRpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="REPITA CONTRASEÑA"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/editNuevapassword"/>
+
+    <Button
+        android:id="@+id/btnResgistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRpassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="41dp"
+        android:text="Registrar" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si tienes cuenta !! inicia Sesion"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnResgistrar"/>
+
+</RelativeLayout>
